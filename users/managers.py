@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 class CustomUserManager(BaseUserManager):
     """
-    Override CustomerUserManager
+    Override CustomerUserManager, commonly used on terminal commands
     """
     def create_user(self, email, password, **extra_fields):
         """
